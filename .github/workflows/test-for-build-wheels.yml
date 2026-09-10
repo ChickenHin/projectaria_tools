@@ -15,8 +15,8 @@ on:
       - 'core/**'
       - 'projectaria_tools/**'
       - '.github/workflows/test-for-build-wheels.yml'
-  schedule:
-    - cron: '0 16 * * MON'  # Weekly canary, Monday 16:00 UTC = 8 AM PST / 9 AM PDT.
+  # schedule:
+  #   - cron: '0 16 * * MON'  # Weekly canary, Monday 16:00 UTC = 8 AM PST / 9 AM PDT.
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
